@@ -297,8 +297,8 @@
       align-items:center;
       position:relative;
       background:
-        linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.48) 42%, rgba(0,0,0,.28) 100%),
-        url('producao.jpeg') center top/cover no-repeat;
+  linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.48) 42%, rgba(0,0,0,.28) 100%),
+  url('producao.jpeg') center center/cover no-repeat;
       color:var(--white);
     }
 
@@ -1461,11 +1461,18 @@
         max-width:none;
       }
 
-      .hero{
-        min-height:auto;
-        padding:120px 0 80px;
-        background-position:center top;
-      }
+     .hero{
+  min-height:75vh;
+  padding:100px 0 60px;
+  background-position:center;
+}
+
+@media (max-width:560px){
+  .hero{
+    min-height:65vh;
+    background-position:top center;
+  }
+}
 
       .hero h1{
         font-size:2.4rem;
